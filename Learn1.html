@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Poppins';
+        }
+        h1{
+            position: absolute;
+            color: wheat;
+            bottom: 20px;
+            right: 20px;
+        }
+        div::before{
+            content: "";
+            background-image: url('./back.jpg');
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            filter: brightness(0.5);
+            z-index: -1;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        li{
+            position: relative;
+            color: white;
+            list-style: none;
+        }
+        img{
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+        button{
+            background: rgba(171, 171, 171, 0.208);
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 10px 20px 10px 20px;
+            color: white;
+        }
+        h3,h5{
+            color: white;
+        }
+        h5{
+            margin: 10px;
+            font-size: large;
+            text-align: center;
+        }
+        h3{
+            margin: 30px;
+            font-size: xx-large;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height:80vh;
+        }
+        input,textarea{
+            background:transparent;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 2px solid white;
+            border-radius: 10px;
+            width: 100%;
+            text-align: center;
+            resize: vertical;
+        }
+        input::placeholder,textarea::placeholder{
+            color: white;
+        }
+        li:hover{
+            color: aqua;
+        }
+        button:hover
+        {
+            background: rgba(199, 46, 46, 0.208);
+        }
+        </style>
+</head>
+<body>
+    <div></div>
+    <div class="nav">
+        <ul>
+            <img src="./logo.png" alt="">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Fitness Calculator</li>
+            <li>Contact Us</li>
+            <button>Call Us Now</button>
+            <button>Email Us</button>
+        </ul>
+    </div>
+    <div class="form">
+        <h3 style="color: white;" >Join the Best Gym Of Delhi</h3>
+        <form action="">
+            <h5>Your Name:</h5>
+            <input type="text" placeholder="Your Name Here"/>
+            <h5>Your Email:</h5>
+            <input type="number" name="" id="" placeholder="Your Number Here"/>
+            <h5>Your Email:</h5>
+            <input type="email" name="" id="" placeholder="Your Email Here"/>
+            <h5>Your Address:</h5>
+            <textarea name="" id="" cols="30" rows="5" placeholder="Your Address Here"></textarea>
+        </form>
+    </div>
+</body>
+</html>
